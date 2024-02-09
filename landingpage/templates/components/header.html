@@ -1,0 +1,45 @@
+{% load static %}
+
+<header class="header">
+    <div class="div-img">
+        <img src="{% static 'img/moving_logo.png' %}" class="logo" alt="logo">
+    </div>
+    <nav class="nav" id="nav">
+        <i class="fa-solid fa-xmark close-icon" id="cerrar"></i>
+        <ul class="nav-list">
+            <li><a href="#about" id="close-about">About Us</a></li>
+            <li><a href="#services" id="close-services">Services</a></li>
+            <li><a href="#reviews" id="close-reviews">Reviews</a></li>
+        </ul>      
+    </nav>
+    <i class="fa-solid fa-bars btn-hamburguesa" id="abrir"></i>
+</header>
+
+<script>
+    const nav = document.querySelector('#nav');
+    const abrir = document.querySelector('#abrir');
+    const cerrar = document.querySelector('#cerrar');
+    const closeAbout = document.querySelector('#close-about');
+    const closeReviews = document.querySelector('#close-reviews');
+    const closeServices = document.querySelector('#close-services'); 
+
+    abrir.addEventListener('click', () => {
+        nav.classList.add('visible');
+    })
+
+    cerrar.addEventListener('click', () => {
+        nav.classList.remove('visible');
+    })
+
+    closeAbout.addEventListener('click', () => {
+        nav.classList.remove('visible');
+    })
+
+    closeReviews.addEventListener('click', () => {
+        nav.classList.remove('visible');
+    })
+
+    closeServices.addEventListener('click', () => {
+        nav.classList.remove('visible');
+    })
+</script>

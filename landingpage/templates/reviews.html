@@ -1,0 +1,150 @@
+{% load static %}
+
+<div class="reviews-section" id="reviews">
+    <h2 class="chooseus-title">Reviews</h2>
+    <p class="reviews-quote">Read what our clients have to say about the services we provide</p>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide testimonials-item">
+                <div class="info">
+                    <!-- <img src="{% static 'img/avatar_flash.png' %}" alt="review-1"> -->
+                    <div class="text-box">
+                        <h3 class="name">Zoe D. I Miami, FL</h3>
+                        <span class="job">Reviewed on 01/31/2024</span>
+                    </div>
+                </div>
+                <p>The guys, Roberto and Hyme, were fantastic. Not only were they super quick, even though my freight elevator was out, they took great care of my things.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+                <div class="info">
+                    <!-- <img src="{% static 'img/avatar_flash.png' %}" alt="review-1"> -->
+                    <div class="text-box">
+                        <h3 class="name">Niyah C. I Miami, FL</h3>
+                        <span class="job">Reviewed on 01/31/2024</span>
+                    </div>
+                </div>
+                <p>Very quick and smooth! Everything thing went perfectly. Would definitely move again with this company.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+                <div class="info">
+                    <!-- <img src="{% static 'img/avatar_flash.png' %}" alt="review-1"> -->
+                    <div class="text-box">
+                        <h3 class="name">CESAR P. | CANTON, GA</h3>
+                        <span class="job">Reviewed on 01/22/2024</span>
+                    </div>
+                </div>
+                <p>We hired 3 Helpers, they were great, very helpful, supportive and friendly. They work so hard and careful.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+                <div class="info">
+                    <!-- <img src="{% static 'img/avatar_flash.png' %}" alt="review-1"> -->
+                    <div class="text-box">
+                        <h3 class="name">Pierce Lang L. I Highlands, NC</h3>
+                        <span class="job">Reviewed on 01/10/2024</span>
+                    </div>
+                </div>
+                <p> They were in constant contact with me, and did everything in their power to to help. Very professional, timely,and fast work!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+                <div class="info">
+                    <!-- <img src="{% static 'img/avatar_flash.png' %}" alt="review-1"> -->
+                    <div class="text-box">
+                        <h3 class="name">Richard W. | Pensacola, FL</h3>
+                        <span class="job">Reviewed on 01/15/2024</span>
+                    </div>
+                </div>
+                <p>Very professional and kind people. They communicated very well before the move date,they showed up on time, and carefully helped us with our belongings.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+                <div class="info">
+                    <!-- <img src="{% static 'img/avatar_flash.png' %}" alt="review-1"> -->
+                    <div class="text-box">
+                        <h3 class="name">Ashley S. I Savannah, GA</h3>
+                        <span class="job">Reviewed on 01/26/2024</span>
+                    </div>
+                </div>
+                <p>The movers were very professional and prompt. They communicated with me effectively to coordinate the move and were careful.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <div class="btn-reviews">
+        <a href="http://www.movinghelp.com/MGMoving" target="_blank" class="btn-more-revies">See more reviews</a>
+    </div>
+    
+</div>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 20,
+
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        breakpoints: {
+            767: {
+                slidesPerView: 2
+            }
+        }
+
+    });
+</script>
